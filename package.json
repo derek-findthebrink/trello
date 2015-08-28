@@ -1,0 +1,35 @@
+{
+  "name": "brink-trello",
+  "version": "1.0.0",
+  "description": "command line interface for trello",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node build/index.js",
+    "js": "coffee -wco build/ dev/coffee/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/findthebrink/trello.git"
+  },
+  "keywords": [
+    "trello",
+    "cli",
+    "command",
+    "tasks"
+  ],
+  "author": "Derek Moore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/findthebrink/trello/issues"
+  },
+  "homepage": "https://github.com/findthebrink/trello#readme",
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "watch": "^0.16.0"
+  },
+  "bin": "build/index.js",
+  "dependencies": {
+    "request": "^2.61.0"
+  }
+}
