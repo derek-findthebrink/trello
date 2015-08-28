@@ -2,11 +2,13 @@
   "name": "brink-trello",
   "version": "1.0.0",
   "description": "command line interface for trello",
-  "main": "build/index.js",
+  "main": "build/index.html",
   "scripts": {
     "test": "mocha",
-    "start": "node build/index.js",
-    "js": "coffee -wco build/ dev/coffee/"
+    "start": "nw .",
+    "js": "coffee -wco build/js/ dev/coffee/",
+    "html": "jade -w --out build/ dev/jade/index.jade",
+    "watch": "npm run js & npm run html"
   },
   "repository": {
     "type": "git",
@@ -28,8 +30,9 @@
     "mocha": "^2.2.5",
     "watch": "^0.16.0"
   },
-  "bin": "build/index.js",
   "dependencies": {
+    "jquery": "^2.1.4",
+    "jquery-ui": "^1.10.5",
     "request": "^2.61.0"
   }
 }

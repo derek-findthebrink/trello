@@ -35,7 +35,7 @@ getToken = (key)->
 			callback_method: "postMessage"
 			scope: "read"
 			expiration: "1hour"
-			name: "brink-trello"
+			name: applicationName
 			key: key
 	}
 	request.get(url, opts, (err, response, body)->

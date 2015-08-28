@@ -1,5 +1,4 @@
 console.log("trello init!")
 
-trello = require('./db/connect')
+trello = require('./js/db/connect')
 
-trello.download()
